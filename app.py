@@ -19,6 +19,15 @@ def testget():
     body = request.data.decode("utf-8")
     return f'testget: {body}' 
 
+@app.route('/parametertest', methods=['GET'])
+def parametertest():
+    # 获取查询字符串参数
+    username = request.args.get('username')
+    age = request.args.get('age')
+
+    # 处理查询字符串参数
+    return 'Hello %s! You are %s years old.' % (username, age)
+
 @app.route('/')
 def index():
     print ("go into index /")

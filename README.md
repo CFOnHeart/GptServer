@@ -20,3 +20,6 @@ Here's the link of our [app service resource](https://portal.azure.com/#@junnorg
 
 When you push the image into the acr, you should wait 2-3 minutes syncing this new image in our app service. 
 You don't need to deploy app service manually.
+
+### How to access your api
+for example: http://gpt-backend.azurewebsites.net/testget
